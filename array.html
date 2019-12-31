@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Arrays</h2>
+    <p id="len"></p>
+    <p id="lst"></p>
+    <p id="tostring"></p>
+   <p id="splice"></p>
+   <p id="concat"></p>
+   <p id="slice"></p>
+   <p id="copywithin"></p>
+   <button onclick="myfunction()">Check "every" method</button>
+   <p id="every"></p>
+  <p id="sort"></p>
+  <p id="reverse"></p>
+  <p id="details"></p>
+    <script>
+    var name = ["siddhi","himalay","kru","jugal"];
+    var details = ["siddhi",23];
+   var age = [23,45,2,21,22];
+    var person = name.concat(age);
+    document.getElementById("len").innerHTML = name.length;
+    document.getElementById("lst").innerHTML = name[2];
+    //document.getElementById("splice").innerHTML= name.splice(2,0,"het","himz");
+    document.getElementById("tostring").innerHTML = name.toString();
+   // document.getElementById("unshift").innerHTML= name.unshift("*");
+    document.getElementById("concat").innerHTML = person;
+    document.getElementById("slice").innerHTML = age.slice(1,3);
+    document.getElementById("copywithin").innerHTML = age.copyWithin(2,0);
+    document.getElementById("details").innerHTML=details;
+    function checkage(ages){
+            return ages>=18;
+        }
+        function myfunction(){
+            document.getElementById("every").innerHTML = age.every(checkage);
+        }
+
+        document.getElementById("sort").innerHTML= age.sort();
+        document.getElementById("reverse").innerHTML=age.reverse();
+    </script>
+</body>
+</html>
