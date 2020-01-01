@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String methods</title>
+</head>
+<body>
+    <h2>Js String methods...</h2>
+    <p>Slice() method</p>
+    <p id ="slice"></p>
+    <p id ="substr"></p>
+    <p id ="substring"></p>
+    <p id ="len"></p>
+    <p id="indexof"></p>
+    <p id="lastindex"></p>
+    <p id="search"></p>
+    <p id="concat"></p>
+    <p id="upper"></p>
+    <p id="lower"></p>
+    <p id="trim"></p>
+    <p id="charat"></p>
+    <p id="split"></p>
+    <p id="charcode"></p>
+    <p id="anchor"></p>
+<script>
+    var str = "siddhi,himalay,krushika,jugal,yashvi";
+    var s = "Hello world.... how r u all     ";
+    var s2 = "hoPeGood";
+    var result = str.slice(6,9);
+    var sub_str = str.substr(-6);
+    var sub_string = str.substring(6);
+    document.getElementById("slice").innerHTML = result;
+    document.getElementById("substr").innerHTML = sub_str;
+    document.getElementById("substring").innerHTML = sub_string;
+    document.getElementById("len").innerHTML = s2.length;
+    document.getElementById("indexof").innerHTML = s.indexOf("world");
+    document.getElementById("lastindex").innerHTML = s.lastIndexOf("all",4);
+    document.getElementById("search").innerHTML=s.search("world");
+    document.getElementById("concat").innerHTML=s.concat("",s2);
+    document.getElementById("upper").innerHTML=s2.toUpperCase();
+    document.getElementById("lower").innerHTML=s2.toLowerCase();
+    document.getElementById("trim").innerHTML=s.trim();
+    document.getElementById("charat").innerHTML=s.charAt(2);
+    document.getElementById("split").innerHTML=s2.split("");
+    document.getElementById("charcode").innerHTML=String.fromCharCode(3,34,90,56);
+    document.getElementById("anchor").innerHTML=s2.anchor("hello");
+    </script>
+</body>
+</html>
